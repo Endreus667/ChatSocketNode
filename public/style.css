@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background-color: black;
+    
+}
+
+ul, li {
+    margin: 1;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#loginPage {
+    display: flex;
+    background: linear-gradient(to right, #000000, #10cfff);
+}
+
+#loginNameInput {
+    border: 2px solid #000;
+    background-color: #ccc;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1{
+    color: #fff; 
+    text-shadow: 
+    0 0 3px rgba(0, 255, 242, 0.5),  
+    0 0 6px rgba(0, 255, 242, 0.5),
+    0 0 10px rgba(0, 255, 242, 0.5),
+    0 0 15px rgba(0, 255, 242, 0.5),
+    0 0 20px rgba(0, 255, 242, 0.3), 
+    0 0 30px rgba(0, 255, 242, 0.2);
+    font-size: 48px;
+    text-align: center; 
+}
+
+#chatPage {
+
+    flex: 1;
+    width: 100%;
+    display: none;
+}
+
+.chatInput {
+    width: 100%;
+    display: flex;
+    
+}
+
+.chatArea {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    background-color: #1f1f1f;
+}
+
+#chatTextInput {
+    flex: 1;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    border: 1px solid cyan;
+    border-radius: 1px;
+}
+
+
+.chatList {
+    flex: 1;
+    background-color: #000;
+    border: 2px solid cyan;
+    border-radius: 3px;
+    overflow-y: auto; /* Permite que a lista tenha scroll */
+    max-height: calc(100vh - 160px); /* Ajuste conforme necessário */
+    padding: 10px; /* Adiciona espaço interno */
+    box-sizing: border-box; /* Inclui o padding nas dimensões totais */
+
+}
+
+.chatList li {
+    padding: 5px; /* Espaçamento interno */
+    font-size: 15px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    list-style: none; /* Remove marcadores da lista */
+}
+
+
+.chatList li.m-status {
+    color: rgb(0, 247, 255);
+    font-style: italic;
+}
+
+.chatList li.m-txt span{
+    font-weight: bold;
+    color: rgb(55, 175, 65);
+}
+
+.chatList li.m-txt span.me {
+    color: rgb(38, 38, 131);
+}
+
+.userList {
+    width: 200px;
+    background-color: #1f1f1f;
+    overflow-y: auto; 
+    max-height: calc(100vh - 80px); 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.userList li {
+    padding: 5px;
+    font-size: 14px; 
+    color: #fff; 
+}
+
+
